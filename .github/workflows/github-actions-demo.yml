@@ -12,5 +12,6 @@ jobs:
       - run: pip install sklearn
       - run: pip install streamlit
       - run: pip install -U Jinja2
-      - run: python test.py
+      - run: pip install pytest
+      - run: pytest test.py
       - run: streamlit run model_dashboard.py &
