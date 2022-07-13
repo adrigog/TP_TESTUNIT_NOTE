@@ -15,4 +15,5 @@ jobs:
       - run: npm install cypress
       - run: pytest test.py
       - run: streamlit run model_dashboard.py &
-      - run: cypress run
+      - run: Cypress run
+       uses: cypress-io/github-action@v4 
